@@ -96,7 +96,10 @@ promptUser()
         return renderLicenseBadge(data);
     })
     .then((data) =>{
-        generateMarkdownFile(data);
+        return generateMarkdown(data);;
+    })
+    .then(markdown => {
+        generateReadme(markdown);
     })
 
 
