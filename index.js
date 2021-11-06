@@ -65,7 +65,6 @@ const promptUser = () => {
                 'Apache',
                 'ISC'
             ]
-            
         },
 
         {
@@ -94,8 +93,7 @@ const promptUser = () => {
 
 promptUser()
     .then((data) =>{
-        console.log('index.js data: ', data);
-        renderLicenseBadge(data);
+        return renderLicenseBadge(data);
     })
     .then((data) =>{
         generateMarkdownFile(data);

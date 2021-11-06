@@ -2,16 +2,20 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(data) {
   if (data.license == 'MIT') {
-    return [...data, badge =  `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`]
+    data.badge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+    return data;
   }
   else if (data.license == 'Apache') {
-    return [...data, badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`]
+    data.badge = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+    return data;
   }
   else if (data.license == 'ISC') {
-    return [...data, badge = `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`]
+    data.badge = `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
+    return data;
   }
   else {
-    return [...data, badge = ('')]
+    data.badge = ('')
+    return data;
   }
 }
 
