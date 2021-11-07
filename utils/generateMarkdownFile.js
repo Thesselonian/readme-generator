@@ -5,15 +5,15 @@ const { reject } = require('lodash');
 generateMarkdown = (data) => {
     const { name, description, screenshot, runApplication, liveLink, badge, technologies} = data;
     return `
-#${name}
+# ${name}
 ${description}
-##Installation
+## Installation
 ${runApplication}
-##Technologies Used
+## Technologies Used
 ${technologies}
-##Screenshot of Generated Document
+## Screenshot of Generated Document
 ![Weather App Screenshot](${screenshot} "Weather App Screenshot")
-##Link to Live URL
+## Link to Live URL
 ${liveLink}
 ${badge}
     `
