@@ -38,6 +38,8 @@ const promptUser = () => {
             }
         },
 
+        // git hub, tests, email questions
+
         {
             type: 'input',
             name: 'screenshot',
@@ -70,15 +72,8 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'technologies',
-            message: 'Enter one of the technologies that you used to develop this project.'
+            message: 'List all of the technologies that you used to develop this project.'
         },
-
-        {
-            type: 'confirm',
-            name: 'confirmAddTechnologies',
-            message: 'Would you like to enter another technology?',
-            default: false
-        }
     ])
 }
 

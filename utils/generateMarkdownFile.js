@@ -9,6 +9,7 @@ generateLiveLink = liveLink => {
     else {
         return `
 ## Link to Live URL
+
 ${liveLink}
         `
 
@@ -17,7 +18,10 @@ ${liveLink}
 
 generateMarkdown = (data) => {
     const { name, description, screenshot, runApplication, liveLink, badge, technologies} = data;
-    return `# ${name}
+    return `${badge}
+
+
+# ${name}
 
 ${description}
 
@@ -27,8 +31,6 @@ ${description}
 * [Installation](#installation)
 
 * [Screenshot](#screenshot)
-
-* [License](#license)
 
 
 ## Installation
@@ -47,9 +49,10 @@ ${technologies}
 
 ${generateLiveLink(liveLink)}
 
-## License
 
-${badge}
+## Questions
+
+Direct any questions to ${email} or you can look at my ${github}.
     `
 }
 
