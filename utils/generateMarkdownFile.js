@@ -13,12 +13,23 @@ ${runApplication}
 ${technologies}
 ## Screenshot of Generated Document
 ![Weather App Screenshot](${screenshot} "Weather App Screenshot")
-## Link to Live URL
-${liveLink}
+${generateLiveLink(liveLink)}
 ${badge}
     `
 }
 
+generateLiveLink = liveLink => {
+    if (!liveLink) {
+        return '';
+    }
+    else {
+        return `
+## Link to Live URL
+${liveLink}
+        `
+
+    }
+}
 generateReadme = markDown => {
     fs.writeFile('./dist/readme.md', markDown, err => {
         if (err) {
