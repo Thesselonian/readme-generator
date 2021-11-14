@@ -1,32 +1,63 @@
+# License
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) This project covered under the Apache license.
+
+
 # readme generator
 
-makes a readme
+
+## Description
+
+it generates readmes
 
 
 ## Table of Contents
 
 * [Installation](#installation)
 
+* [Usage](#usage)
+
+* [Contributing](#contributing)
+
+* [Testing](#testing)
+
 * [Screenshot](#screenshot)
 
-* [License](#license)
+* [Questions](#questions)
 
 
 ## Installation
 
-node idnex.js
+node index.js
 
 
-## Technologies Used
+## Usage
 
-node
+it should be used to make readmes
 
 
-## Screenshot
+## Contributing
+
+open github branch
+
+
+## Testing
+
+undefined
+
+
+## Screenshot of Generated Document
 
 ![Generated Readme Screenshot](./images/screenshot.JPG "Generated Readme Screenshot")
 
 
-## License
+## Link to Live URL
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+www.google.com
+        
+
+
+## Questions
+
+Send questions to email ericyoung111@gmail.com or check out my [GitHub profile.](www.github.com/readme-generator)
+    

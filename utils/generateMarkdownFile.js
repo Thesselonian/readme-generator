@@ -1,6 +1,5 @@
 // pull file system module
 const fs = require('fs');
-// const { reject } = require('lodash');
 
 generateLiveLink = liveLink => {
     if (!liveLink) {
@@ -17,11 +16,16 @@ ${liveLink}
 }
 
 generateMarkdown = (data) => {
-    const { name, description, screenshot, runApplication, liveLink, badge, technologies} = data;
-    return `${badge}
+    const { name, description, screenshot, runApplication, liveLink, badge, usage, email, github, contributing, test} = data;
+    return `# License
+
+${badge}
 
 
 # ${name}
+
+
+## Description
 
 ${description}
 
@@ -30,7 +34,15 @@ ${description}
 
 * [Installation](#installation)
 
+* [Usage](#usage)
+
+* [Contributing](#contributing)
+
+* [Testing](#testing)
+
 * [Screenshot](#screenshot)
+
+* [Questions](#questions)
 
 
 ## Installation
@@ -38,9 +50,19 @@ ${description}
 ${runApplication}
 
 
-## Technologies Used
+## Usage
 
-${technologies}
+${usage}
+
+
+## Contributing
+
+${contributing}
+
+
+## Testing
+
+${test}
 
 
 ## Screenshot of Generated Document
@@ -52,7 +74,7 @@ ${generateLiveLink(liveLink)}
 
 ## Questions
 
-Direct any questions to ${email} or you can look at my ${github}.
+Send questions to email ${email} or check out my [GitHub profile.](www.github.com/${github})
     `
 }
 
